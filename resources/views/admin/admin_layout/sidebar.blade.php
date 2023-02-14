@@ -25,7 +25,7 @@
                      </a>
                      <ul class="nav-second-level">
                          
-                         <li class="{{Request::segment(2) == 'product' ? 'mm-active': ''}}"><a href="{{ route('admin.product.create') }}">Product List</a></li>
+                         <li class="{{Request::segment(2) == 'product' ? 'mm-active': ''}}"><a href="{{ route('admin.product.index') }}">Product List</a></li>
                          <li class="{{Request::segment(2) == 'product-category' ? 'mm-active': ''}}"><a href="{{ route('admin.product-category.index') }}">Product Category</a></li>
                          <li class="{{Request::segment(2) == 'product-unit' ? 'mm-active': ''}}"><a href="{{ route('admin.product-unit.index') }}">Product Unit</a></li>
                          

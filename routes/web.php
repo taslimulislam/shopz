@@ -41,19 +41,8 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
             });
         });
     });
-    Route::name('product.')->group(function () {
-        Route::prefix("product")->group(function(){
-            Route::controller(ProductController::class)->group(function () {
-        
-                Route::get('/index', 'index')->name('index');
-                Route::get('/create', 'create')->name('create');
-                Route::post('register', 'store')->name('store');
-                // Route::get('/{user}', 'edit')->name('edit');
-                // Route::put('/{user}', 'update')->name('update');
-                // Route::delete('/destroy/{user}', 'destroy')->name('destroy');
-            });
-        });
-    });
+    
+    Route::resource('product', ProductController::class);
     Route::resource('product-category', ProductCatrgoryController::class);
     Route::resource('product-unit', ProductUnitController::class);
     Route::resource('supplier', SupplierController::class);

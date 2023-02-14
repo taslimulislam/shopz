@@ -154,7 +154,6 @@ function editcatFunc(id) {
         
         success: function(res) {
             
-            console.log(res);
             $('#category_namee').val(res.category_name);
             $('#statuse').val(res.status);
            

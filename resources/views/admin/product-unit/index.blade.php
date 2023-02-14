@@ -134,7 +134,6 @@ function editunFunc(id) {
         
         success: function(res) {
             
-            console.log(res);
             $('#unit_namee').val(res.unit_name);
             $('#statuse').val(res.status);
            
