@@ -11,7 +11,7 @@ body {
     ;
     font-size: 15px;
     height: 100%;
-    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    font-family: 'Poppins', 'Helvetica Neue',
 }
 
 @font-face {
@@ -2349,7 +2349,7 @@ table code {
     }
     .fixed .sidebar+.content-wrapper {
         margin-left: 290px;
-        margin-top: 90px
+        margin-top: 60px
     }
     .fixed.fixed.sidebar-collapse_hover .sidebar+.content-wrapper {
         margin-left: 250px;

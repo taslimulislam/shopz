@@ -26,18 +26,13 @@
                      <ul class="nav-second-level">
                          
                          <li class="{{Request::segment(2) == 'product' ? 'mm-active': ''}}"><a href="{{ route('admin.product.create') }}">Product List</a></li>
-                         {{-- <li class="{{Request::segment(2) == 'blog-category' && Request::segment(3) == 'index' ? 'mm-active': ''}}"><a href="#">Blog Category</a></li> --}}
+                         <li class="{{Request::segment(2) == 'product-category' ? 'mm-active': ''}}"><a href="{{ route('admin.product-category.index') }}">Product Category</a></li>
+                         <li class="{{Request::segment(2) == 'product-unit' ? 'mm-active': ''}}"><a href="{{ route('admin.product-unit.index') }}">Product Unit</a></li>
                          
                      </ul>
                 </li> 
-                
-<!--                  
-                <li class="{{Request::segment(2) == 'menu' && Request::segment(3) == 'index' ? 'mm-active': ''}}"><a href="#"><i class="ti-menu-alt"></i>Web Menu</a></li>
-                <li class="{{Request::segment(2) == 'mobile' && Request::segment(3) == 'index' ? 'mm-active': ''}}"><a href="#"><i class="ti-mobile"></i>Mobile</a></li>
-                <li class="{{Request::segment(2) == 'banner' && Request::segment(3) == 'index' ? 'mm-active': ''}}"><a href="#"><i class="ti-image"></i>Banner</a></li>
-                <li class="{{Request::segment(2) == 'service' && Request::segment(3) == 'index' ? 'mm-active': ''}}"><a href="#"><i class="fa fa-handshake"></i>Services</a></li>
-                <li class="{{Request::segment(2) == 'about' && Request::segment(3) == 'create' ? 'mm-active': ''}}"><a href="#"><i class="ti-shine"></i>About</a></li> 
-                <li class="{{Request::segment(2) == 'web-setting' && Request::segment(3) == 'edit'? 'mm-active': ''}}"><a href="#"><i class="ti-settings"></i>Web Setting</a></li>-->
+
+                <li class="{{Request::segment(2) == 'supplier' ? 'mm-active': ''}}"><a href="{{ route('admin.supplier.index') }}"><i class="ti-user"></i>Suppliers</a></li>
                 <li class="{{Request::segment(2) == 'adduser' && Request::segment(3) == 'index' ? 'mm-active': ''}}"><a href="{{ route('admin.adduser.register') }}"><i class="ti-user"></i>Users</a></li>
                  
              </ul>

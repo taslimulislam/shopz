@@ -4,6 +4,9 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Backend\ProductController;
+use App\Http\Controllers\Backend\ProductCatrgoryController;
+use App\Http\Controllers\Backend\ProductUnitController;
+use App\Http\Controllers\Backend\SupplierController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,6 +54,10 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
             });
         });
     });
+    Route::resource('product-category', ProductCatrgoryController::class);
+    Route::resource('product-unit', ProductUnitController::class);
+    Route::resource('supplier', SupplierController::class);
+
 });
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
